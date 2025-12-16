@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bosco Business</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+             font-family: "Oswald", sans-serif;
+        }
+
+        nav {
+            background-color: midnightblue;
+            color: white;
+            font-family: arial, Arial, Helvetica, sans-serif;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: red;
+            font-weight: bold;
+            text-shadow: 3px 3px 3px black;
+        }
+
+        header {
+            background-image: url(images/business.jpg);
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #titular {
+          
+            text-align: center;
+            
+        }
+
+        #titular h1 {
+            color: white;
+            text-shadow: 3px 3px 3px black;
+            font-size: 3em;
+        }
+
+        #titular h2 {
+            color: orange;
+            text-shadow: 3px 3px 3px black;
+        }
+
+
+        #contenedor-quienes {
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: red;
+
+     }
+
+        #izqui {
+            width: 40%;
+        }
+
+        #dere {
+            text-align: center;
+            width: 40%;
+            padding: 10px;
+        }
+
+        #dere img {
+            width: 100%;
+            border-radius: 100px;
+
+        }
+
+        .titulo {
+            color: red;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 3px 3px 3px aqua;
+            justify-content: center;
+        }
+
+
+        section#obras {
+            background-color: coral;
+            padding: 20px;
+            align-content: center;
+            color: white;
+            text-align: center;
+           
+        }
+
+        #contenedor-obras {
+            display: flex;
+            flex-wrap: wrap;
+           
+            justify-content: space-around;
+        }
+
+        .obra1 {
+            width: 30%;
+            text-align: center;
+           
+        }
+
+        .obra1 img {
+            width: 90%;
+
+        }
+
+        
+        footer {
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+
+        footer #caja-superior {
+            width: 90%;
+            border-bottom: 2px solid white;
+        }
+
+        footer .caja-inferior {
+            width: 33%;
+            padding: 10px
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Donde estamos</a>
+        <a href="#">Que hacemos</a>
+        <a href="#">Contacto</a>
+        <a href="#">Quienes somos</a>
+    </nav>
+
+    <header>
+        <div id="titular">
+            <h1>Bosco Business</h1>
+            <h2>Tu puerta al futuro</h2>
+        </div>
+    </header>
+
+
+    <section id="quienes-somos">
+        <h1 class="titulo">Quienes somos</h1>
+        <div id="contenedor-quienes">
+
+            <div id="izqui">
+                <h1>Un esquipo Multidisciplinar y profesional</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni dignissimos corrupti molestias, facilis pariatur? Placeat temporibus necessitatibus inventore voluptatum consequatur et quis maxime numquam facere sunt, doloremque soluta velit?</p>
+
+            </div>
+
+
+
+            <div id="dere">
+                <img src="https://www.aprendemas.com/es/blog/images/2017/03/arquitectura1.jpg" alt="">
+
+
+            </div>
+
+        </div>
+    </section>
+    
+
+    <section id="obras">
+        
+        <h1 class="obras">Obras</h1>
+        
+        <div id="contenedor-obras">
+        <div class="obra1">
+            <img src="https://previews.123rf.com/images/kwangmoo/kwangmoo1802/kwangmoo180200392/95739858-new-house-under-construction-at-building-site.jpg" alt="">
+            <p>Madrid</p>
+            </div>
+            <div class="obra1">
+            <img src="https://previews.123rf.com/images/kwangmoo/kwangmoo1802/kwangmoo180200392/95739858-new-house-under-construction-at-building-site.jpg" alt="">
+            <p>Ciudad<p>
+           </div>
+            <div class="obra1">
+            <img src="https://previews.123rf.com/images/kwangmoo/kwangmoo1802/kwangmoo180200392/95739858-new-house-under-construction-at-building-site.jpg" alt="">
+            <p>Malaga</p>
+        </div>
+         <div class="obra1">
+            <img src="https://previews.123rf.com/images/kwangmoo/kwangmoo1802/kwangmoo180200392/95739858-new-house-under-construction-at-building-site.jpg" alt="">
+            <p>Barcelona</p>
+        </div>
+         <div class="obra1">
+            <img src="https://previews.123rf.com/images/kwangmoo/kwangmoo1802/kwangmoo180200392/95739858-new-house-under-construction-at-building-site.jpg" alt="">
+            <p>Villafranca</p>
+        </div>
+         <div class="obra1">
+            <img src="https://previews.123rf.com/images/kwangmoo/kwangmoo1802/kwangmoo180200392/95739858-new-house-under-construction-at-building-site.jpg" alt="">
+            <p>Alcázar de san juan</p>
+        </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p id="caja-superior">Contacte con nosotros, trabajamos los 365 dias del año</p>
+        <div class="caja-inferior">
+            <h2>Enlaces</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">x</a>
+        </div>
+        <div class="caja-inferior">
+            <h2>Estamos en</h2>
+            <p>Avda. Los institutos</p>
+            <p>13600 Alcázar de San Juan</p>
+            </div>
+
+            <div class="caja-inferior">
+                <h2>Email</h2>
+                <p>Agora@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+</body>
+</html>
