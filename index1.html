@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+
+
+    /* el color para movil va a ser aquamarine */
+        body {
+            background-color: aquamarine;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             height: 300px;
+             background-position:  center center;
+            background-image: url(images/2026-01-13_11-55.png);
+            background-size: cover;
+            
+        }
+
+        header h1 {
+            color: white;
+            font-size: 55px;
+            text-shadow: 3px 3px 3px black;
+        }
+
+        nav {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            
+
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            border-bottom:  2px solid white;
+            padding: 10px;
+            font-size: 2em;
+        }
+
+        nav a:hover {
+            background-color: aqua;
+            color: red;
+            font-weight: bold;
+        }
+        
+        #contenedor-quienes-somos p {
+            font-size: 3em;
+            
+        }
+
+        /*2.para dispositivos de 768px el color de fondo es coral*/
+
+        @media (min-width:768px) {
+            body {
+            background-color: coral;
+        }
+        header {
+            background-image: url(images/taller.jpg);
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            display: inline;
+            border-bottom: none;
+        }
+
+        #contenedor-quienes-somos {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #contenedor-quienes-somos img {
+            width: 45%;
+        }
+
+        #contenedor-quienes-somos p {
+            width: 55%;
+        }
+
+        }
+
+
+
+
+        /*3.para dispositivos de mas de 768px el color de fondo es amarillo*/
+        
+        
+        @media (min-width:1000px) {
+            body {
+            background-color: yellow;
+        }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header><h1>Talleres bosco</h1></header>
+    <nav>
+        <a href="#quienes">Quienes somos</a>
+        <a href="#donde-estamos">Dónde estamos</a>
+        <a href="#nuestros-clientes">Nuestros clientes</a>
+    
+    </nav>
+
+
+    <section id="quienes-somos">
+
+
+        <h1 class="titulo">
+            Quienes somos
+        </h1>
+
+
+
+        <div id="contenedor-quienes-somos">
+
+            <img src="https://img.freepik.com/foto-gratis/mecanico-adulto-medio-que-trabaja-computadora-portatil-mientras-ejecuta-diagnostico-automovil-su-companero-trabajo-taller-reparacion-automoviles_637285-7646.jpg?semt=ais_hybrid&w=740&q=80 " alt="">
+            <p>somos una empresa joven y dinámica Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde odit illum inventore cupiditate hic alias repellat, numquam accusamus molestias eos autem dignissimos iste corporis praesentium veniam, mollitia aperiam obcaecati omnis</p>
+        </div>
+
+
+
+    </section>
+
+
+
+    <h1>Media Queries</h1>
+
+    
+</body>
+</html>
