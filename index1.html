@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/09ad6cf311.js" crossorigin="anonymous"></script>
     <style> 
 
 
@@ -65,22 +66,40 @@
         }
 
         #contenedor-quienes-somos img {
-            width: 45%;
+            width: 40%;
         }
 
         #contenedor-quienes-somos p {
             width: 55%;
         }
-        
-        #contenedor-quienes-somos p {
-            font-size: 3em;
-            
+
+
+        #nuestros-servicios {
+            background-color: white;
+        }
+    
+        .servicio {
+            color: red;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px ;
+            font-size: 4em;
+            padding: 10px;
+            margin-bottom: 10px;
+            height: 100;
         }
 
-          #contenedor-quienes-somos {
-            display: 
-          }
-    
+        .servicio:hover {
+            opacity: 0.5;
+        }
+
+        .titulo {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
+        }
+        
 
         /*2.para dispositivos de 768px el color de fondo es coral*/
 
@@ -106,15 +125,31 @@
             justify-content: space-around;
         }
 
+
         #contenedor-quienes-somos img {
-            width: 45%;
+            width: 40%;
         }
 
         #contenedor-quienes-somos p {
             width: 55%;
         }
 
+        #contenedor-nuestros-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
+
+        .servicio {
+            width: 45%;
+        }
+
+    }
+
+
+        
+
+        
 
 
 
@@ -125,6 +160,11 @@
         @media (min-width:1000px) {
             body {
             background-color: yellow;
+        }
+
+        .servicio {
+            width: 30%;
+            font-size: 2em;
         }
         }
 
@@ -159,6 +199,51 @@
 
 
 
+    </section>
+
+    <section id="nuestros-servicios">
+
+        <h1 class="titulo">
+            Nuestros servicios
+        </h1>
+
+        <div id="contenedor-nuestros-servicios">
+
+        <div class="servicio">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <p>Servicio tecnico</p>
+        </div>
+
+        <div class="servicio">
+        <i class="fa-solid fa-phone"></i>
+        <p>Atencion telefonica</p>
+        </div>
+
+        <div class="servicio">
+        <i class="fa-solid fa-truck"></i>
+        <p>Servicio a domicilio</p>
+        </div>
+
+        <div class="servicio">
+        <i class="fa-solid fa-car"></i>
+        <p>Vehiculo de sustitucion</p>
+        </div>
+
+        <div class="servicio">
+        <i class="fa-solid fa-info"></i>
+        <p>Vehiculo de sustitucion</p>
+        </div>
+
+        <div class="servicio">
+        <i class="fa-solid fa-clock"></i>
+        <p>Horario extensivo</p>
+        </div>
+
+
+        </div>
+
+        
+        
     </section>
 
 
